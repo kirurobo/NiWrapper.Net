@@ -88,10 +88,10 @@ namespace NiTEHandTracker
                                 if (hand.isTracking)
                                 {
                                     Point HandPosEllipse = new Point();
-                                    PointF HandPos = hTracker.ConvertHandCoordinatesToDepth(hand.Position);
+                                    NiTEWrapper.PointF HandPos = hTracker.ConvertHandCoordinatesToDepth(hand.Position);
                                     HandPosEllipse.X = (int)HandPos.X - 5;
                                     HandPosEllipse.Y = (int)HandPos.Y - 5;
-                                    g.DrawEllipse(new Pen(Brushes.White, 5), new Rectangle(HandPosEllipse, new Size(5, 5)));
+                                    g.DrawEllipse(new Pen(Brushes.White, 5), new Rectangle(HandPosEllipse, new System.Drawing.Size(5, 5)));
                                 }
                             }
 

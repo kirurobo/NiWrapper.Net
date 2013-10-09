@@ -20,8 +20,6 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Runtime.InteropServices;
-using System.Windows.Media.Media3D;
-using System.Drawing;
 using OpenNIWrapper;
 
 namespace NiTEWrapper
@@ -80,8 +78,8 @@ namespace NiTEWrapper
                     UserTrackerFrameRef_getFloor(this.Handle, ref Px, ref Py, ref Pz, ref Nx, ref Ny, ref Nz);
                     _Floor = new Plane()
                     {
-                        normal = new System.Windows.Media.Media3D.Vector3D(Nx, Ny, Nz),
-                        point = new System.Windows.Media.Media3D.Point3D(Px, Py, Pz)
+                        normal = new Vector3D(Nx, Ny, Nz),
+                        point = new Point3D(Px, Py, Pz)
                     };
                 }
                 return (Plane)_Floor;

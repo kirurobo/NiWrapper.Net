@@ -21,8 +21,6 @@ using System.Collections.Generic;
 using System.Text;
 using System.Runtime.InteropServices;
 using OpenNIWrapper;
-using System.Windows.Media.Media3D;
-using System.Drawing;
 namespace NiTEWrapper
 {
     public class HandTracker : NiTEBase

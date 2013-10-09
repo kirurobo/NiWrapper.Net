@@ -125,8 +125,8 @@ namespace NiTESkeletonTracker
                     {
                         Point j1PosEllipse = new Point();
                         Point j2PosEllipse = new Point();
-                        PointF j1PosLine = uTracker.ConvertJointCoordinatesToDepth(joint1.Position);
-                        PointF j2PosLine = uTracker.ConvertJointCoordinatesToDepth(joint2.Position);
+                        NiTEWrapper.PointF j1PosLine = uTracker.ConvertJointCoordinatesToDepth(joint1.Position);
+                        NiTEWrapper.PointF j2PosLine = uTracker.ConvertJointCoordinatesToDepth(joint2.Position);
                         j1PosEllipse.X = (int)j1PosLine.X - 5;
                         j1PosEllipse.Y = (int)j1PosLine.Y - 5;
                         j2PosEllipse.X = (int)j2PosLine.X - 5;
@@ -135,9 +135,9 @@ namespace NiTESkeletonTracker
                         j1PosLine.Y -= 2;
                         j2PosLine.X -= 2;
                         j2PosLine.Y -= 2;
-                        g.DrawLine(new Pen(Brushes.White, 3), j1PosLine, j2PosLine);
-                        g.DrawEllipse(new Pen(Brushes.White, 5), new Rectangle(j1PosEllipse, new Size(5, 5)));
-                        g.DrawEllipse(new Pen(Brushes.White, 5), new Rectangle(j2PosEllipse, new Size(5, 5)));
+                        g.DrawLine(new Pen(Brushes.White, 3), j1PosLine.X, j1PosLine.Y, j2PosLine.X, j2PosLine.Y);
+                        g.DrawEllipse(new Pen(Brushes.White, 5), new Rectangle(j1PosEllipse, new System.Drawing.Size(5, 5)));
+                        g.DrawEllipse(new Pen(Brushes.White, 5), new Rectangle(j2PosEllipse, new System.Drawing.Size(5, 5)));
                     }
                 }
             }

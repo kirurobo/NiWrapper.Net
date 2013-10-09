@@ -79,9 +79,9 @@
     <None Include="app.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\NiWrapper.Net\NiWrapper.Net.csproj">
+    <ProjectReference Include="..\..\NiWrapper.Net\NiWrapperMono.csproj">
       <Project>{A4AAED44-E0E5-4FD3-B4B4-FAF27E089BFC}</Project>
-      <Name>NiWrapper.Net</Name>
+      <Name>NiWrapperMono</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
