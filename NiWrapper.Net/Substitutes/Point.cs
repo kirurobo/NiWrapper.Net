@@ -1,4 +1,4 @@
-﻿namespace OpenNIWrapper
+﻿namespace OpenNIWrapper.Substitutes
 {
     public struct Point
     {

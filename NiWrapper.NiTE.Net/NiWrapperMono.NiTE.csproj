@@ -34,10 +34,11 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
     <OutputPath>..\bin\NiTE\x86_Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
+    <DefineConstants>
+    </DefineConstants>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <Optimize>true</Optimize>
-    <DebugType>pdbonly</DebugType>
+    <DebugType>none</DebugType>
     <PlatformTarget>x86</PlatformTarget>
     <CodeAnalysisLogFile>..\bin\x86_Release\NiWrapper.NiTE.Net.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
     <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
@@ -95,17 +96,17 @@
     <Compile Include="HandData.cs" />
     <Compile Include="HandTracker.cs" />
     <Compile Include="HandTrackerFrameRef.cs" />
-    <Compile Include="Alternative\PointF.cs" />
-    <Compile Include="Alternative\Rect3D.cs" />
-    <Compile Include="Alternative\Size.cs" />
-    <Compile Include="Alternative\Vector3D.cs" />
+    <Compile Include="Substitutes\PointF.cs" />
+    <Compile Include="Substitutes\Rect3D.cs" />
+    <Compile Include="Substitutes\Size.cs" />
+    <Compile Include="Substitutes\Vector3D.cs" />
     <Compile Include="NiTE.cs" />
     <Compile Include="NiTEBase.cs" />
     <Compile Include="Plane.cs" />
-    <Compile Include="Alternative\Point3D.cs" />
+    <Compile Include="Substitutes\Point3D.cs" />
     <Compile Include="PoseData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Alternative\Quaternion.cs" />
+    <Compile Include="Substitutes\Quaternion.cs" />
     <Compile Include="Skeleton.cs" />
     <Compile Include="SkeletonJoint.cs" />
     <Compile Include="UserData.cs" />
@@ -120,7 +121,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="NiWrapper.NiTE.Net - LICENSE.txt">
+    <Content Include="NiWrapperMono.NiTE - LICENSE.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="ZipExcludeList.txt" />

@@ -34,10 +34,11 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
     <OutputPath>..\bin\x86_Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
+    <DefineConstants>
+    </DefineConstants>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <Optimize>true</Optimize>
-    <DebugType>pdbonly</DebugType>
+    <DebugType>none</DebugType>
     <PlatformTarget>x86</PlatformTarget>
     <CodeAnalysisLogFile>..\bin\x86_Release\NiWrapper.Net.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
     <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
@@ -89,9 +90,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Alternative\Point.cs" />
-    <Compile Include="Alternative\Rectangle.cs" />
-    <Compile Include="Alternative\Size.cs" />
+    <Compile Include="Substitutes\Point.cs" />
+    <Compile Include="Substitutes\Rectangle.cs" />
+    <Compile Include="Substitutes\Size.cs" />
     <Compile Include="Array.cs" />
     <Compile Include="CameraSettings.cs" />
     <Compile Include="Common.cs" />
@@ -111,7 +112,7 @@
     <Compile Include="VideoStream.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="NiWrapper.Net - LICENSE.txt">
+    <Content Include="NiWrapperMono - LICENSE.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="ZipExcludeList.txt" />

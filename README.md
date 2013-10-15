@@ -2,16 +2,16 @@ NiWrapperMono
 =============
 
 NiWrapper.Net を Unity で利用できるよう
-・System.Windows.Media.Media3D
-・System.Drawing
+* System.Windows.Media.Media3D
+* System.Drawing
 を使わない形で書き換えています。
 
 Point, Rectangle といった構造体が
 内部定義のものに置き換えてあります。
 
 Bitmap を利用している
-・OpenNIWrapper.VideoFrameRef.toBitmap()
-・OpenNIWrapper.VideoFrameRef.updateBitmap()
+* OpenNIWrapper.VideoFrameRef.toBitmap()
+* OpenNIWrapper.VideoFrameRef.updateBitmap()
 は省かれています。
 
 

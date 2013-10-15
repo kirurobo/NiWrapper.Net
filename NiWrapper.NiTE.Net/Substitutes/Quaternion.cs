@@ -1,5 +1,4 @@
-﻿
-namespace NiTEWrapper
+﻿namespace NiTEWrapper.Substitutes
 {
     public struct Quaternion
     {

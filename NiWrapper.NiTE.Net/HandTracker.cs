@@ -21,6 +21,8 @@ using System.Collections.Generic;
 using System.Text;
 using System.Runtime.InteropServices;
 using OpenNIWrapper;
+using NiTEWrapper.Substitutes;
+
 namespace NiTEWrapper
 {
     public class HandTracker : NiTEBase

@@ -21,6 +21,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Runtime.InteropServices;
 using System.ComponentModel;
+using OpenNIWrapper.Substitutes;
 
 namespace OpenNIWrapper
 {

@@ -20,6 +20,8 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Runtime.InteropServices;
+using NiTEWrapper.Substitutes;
+
 namespace NiTEWrapper
 {
     public class SkeletonJoint : NiTEBase

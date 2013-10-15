@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace OpenNIWrapper
+﻿namespace OpenNIWrapper.Substitutes
 {
     public struct Size
     {
